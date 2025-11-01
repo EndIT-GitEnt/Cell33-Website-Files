@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
+
 import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import imgAdventure from "@/assets/images/programs/adventure.jpg";
 import imgAdventureActivity from "@/assets/images/programs/adventure-activity.jpg";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Adventure Expeditions | Wilderness Malaysia",
     description:
         "Join thrilling guided adventures across Malaysia — from jungle treks to mountain expeditions and river journeys.",

@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import Image from "next/image";
 import ProgramCard from "@/components/ProgramCard";
 import CTASection from "@/components/CTASection";
@@ -8,7 +10,7 @@ import imgLeadership from "@/assets/images/programs/leadership.jpg";
 import imgTallship from "@/assets/images/programs/tallship.jpg";
 import imgRecreation from "@/assets/images/programs/recreation.jpg";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Our Programs | Wilderness Malaysia",
   description:
     "Explore our outdoor experiential learning programs — from corporate team-building to youth expeditions and leadership training.",

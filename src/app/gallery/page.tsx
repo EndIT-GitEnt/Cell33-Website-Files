@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import Image from "next/image";
 import imgAboutHero from "@/assets/images/hero/about-hero.jpg";
 import imgAdventure from "@/assets/images/programs/adventure.jpg";
@@ -9,7 +11,7 @@ import imgCustom from "@/assets/images/programs/custom.jpg";
 import imgTallship from "@/assets/images/programs/tallship.jpg";
 import imgInstructor from "@/assets/images/programs/instructor.jpg";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Gallery | Wilderness Malaysia",
   description:
     "A glimpse into our programs and expeditions across Malaysia’s forests, rivers, and coasts.",

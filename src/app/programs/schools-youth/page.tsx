@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
+
 import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import imgSchools from "@/assets/images/programs/schools.jpg";
 import imgSchoolsActivity from "@/assets/images/programs/schools-activity.jpg";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Schools & Youth Expeditions | Wilderness Malaysia",
     description:
         "Empowering young people through outdoor education, adventure, and leadership development in Malaysia’s most inspiring natural landscapes.",

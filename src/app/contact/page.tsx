@@ -1,8 +1,10 @@
+import type { Metadata } from "next";
+
 import CTASection from "@/components/CTASection";
 import InquiryForm from "@/components/InquiryForm";
 
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Contact | Wilderness Malaysia",
     description:
         "Get in touch with Wilderness Malaysia to enquire about programs, partnerships, or general questions.",

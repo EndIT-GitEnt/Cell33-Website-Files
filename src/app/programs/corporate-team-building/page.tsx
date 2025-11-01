@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
+
 import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import imgCorporate from "@/assets/images/programs/corporate.jpg";
 import imgCorporateActivity from "@/assets/images/programs/corporate-activity.jpg";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Corporate Team-Building | Wilderness Malaysia",
     description:
         "Transform your team with outdoor experiential challenges that build trust, communication, and leadership.",

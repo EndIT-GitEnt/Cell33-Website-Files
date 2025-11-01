@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
+
 import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import imgLeadership from "@/assets/images/programs/leadership.jpg";
 import imgLeadershipActivity from "@/assets/images/programs/leadership-activity.jpg";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Leadership Skills | Wilderness Malaysia",
     description:
         "Develop resilience, communication, and decision-making through our nature-based leadership programs.",

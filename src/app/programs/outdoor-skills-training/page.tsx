@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
+
 import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import imgInstructor from "@/assets/images/programs/instructor.jpg";
 import imgInstructorActivity from "@/assets/images/programs/instructor-activity.jpg";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Outdoor Skills & Instructor Training | Wilderness Malaysia",
     description:
         "Gain the technical expertise, leadership confidence, and certification to guide and teach in outdoor environments.",

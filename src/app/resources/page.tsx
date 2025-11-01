@@ -1,4 +1,6 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Resources | Wilderness Malaysia",
   description:
     "Guides, checklists, and recommended reading to help you prepare for outdoor programs in Malaysia.",

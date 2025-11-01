@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
+
 import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import aboutHero from "@/assets/images/hero/about-hero.jpg";
 import missionImg from "@/assets/images/about/mission.jpg";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "About Us | Wilderness Malaysia",
   description:
     "Discover Wilderness Malaysia’s story — 25+ years of outdoor experiential learning, leadership, and adventure programs.",

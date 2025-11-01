@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
+
 import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import imgCustom from "@/assets/images/programs/custom.jpg";
 import imgCustomActivity from "@/assets/images/programs/custom-activity.jpg";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Custom Programs | Wilderness Malaysia",
     description:
         "Design a tailored outdoor experience that matches your goals — from corporate retreats to youth journeys and adventure expeditions.",

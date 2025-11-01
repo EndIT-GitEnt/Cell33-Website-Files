@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
+
 import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import imgTallship from "@/assets/images/programs/tallship.jpg";
 import imgTallshipCrew from "@/assets/images/programs/tallship-crew.jpg";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Tall Ship Program | Wilderness Malaysia",
     description:
         "A life-changing maritime adventure — learn teamwork, leadership, and resilience while sailing Malaysia’s tropical waters.",
