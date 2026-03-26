@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
 
   // Static HTML export for Cloudflare Pages / static hosting
   // See: https://nextjs.org/docs/app/building-your-application/deploying/static-exports
-  output: "export",
+  output: "standalone",
 
   // Make next/image compatible with static export (renders plain <img>)
   images: { unoptimized: true },
