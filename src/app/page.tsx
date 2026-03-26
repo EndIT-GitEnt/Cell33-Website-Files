@@ -1,100 +1,122 @@
-"use client";
-
-import HeroSection from "@/components/HeroSection";
-import ProgramCard from "@/components/ProgramCard";
-import TestimonialCarousel from "@/components/TestimonialCarousel";
-import CTASection from "@/components/CTASection";
-import ClientLogoGrid from "@/components/ClientLogoGrid";
-import heroPrograms from "@/assets/images/hero/programs-hero.jpg";
-import imgCorporate from "@/assets/images/programs/corporate.jpg";
-import imgSchools from "@/assets/images/programs/schools.jpg";
-import imgLeadership from "@/assets/images/programs/leadership.jpg";
-import wmLogo from "@/assets/images/WM_Logo_130x80.png";
-
-export default function HomePage() {
+export default function UnderConstructionPage() {
   return (
-    <main className="flex flex-col items-center">
-      {/* Hero Section */}
-      <HeroSection
-        title="Challenge. Explore. Discover."
-        subtitle="Outdoor experiential learning and team-building programs that inspire growth and leadership."
-        image={heroPrograms}
-        ctaText="Explore Our Programs"
-        ctaLink="/programs"
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 50%, #16213e 100%)",
+        color: "#ffffff",
+        fontFamily: "var(--font-geist-sans), sans-serif",
+        textAlign: "center",
+        padding: "2rem",
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
+      {/* Background glow */}
+      <div
+        style={{
+          position: "absolute",
+          width: "600px",
+          height: "600px",
+          borderRadius: "50%",
+          background: "radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%)",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          pointerEvents: "none",
+        }}
       />
 
-      {/* About Preview */}
-      <section className="max-w-6xl mx-auto py-20 px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Wilderness Malaysia?</h2>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-8">
-          For over 25 years, Wilderness Malaysia has designed transformative outdoor programs that build confidence, teamwork, and leadership. From school expeditions to corporate challenges, every journey with us helps participants grow beyond comfort zones.
-        </p>
-        <a href="/about" className="inline-block px-6 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition">
-          Learn More
+      {/* Logo / Brand */}
+      <div style={{ marginBottom: "2.5rem", position: "relative" }}>
+        <div
+          style={{
+            width: "80px",
+            height: "80px",
+            borderRadius: "20px",
+            background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            margin: "0 auto 1.5rem",
+            fontSize: "2rem",
+            fontWeight: "800",
+            letterSpacing: "-1px",
+            boxShadow: "0 0 40px rgba(99,102,241,0.4)",
+          }}
+        >
+          C3
+        </div>
+        <h1
+          style={{
+            fontSize: "clamp(2.5rem, 8vw, 5rem)",
+            fontWeight: "800",
+            margin: 0,
+            letterSpacing: "-2px",
+            background: "linear-gradient(90deg, #ffffff, #a5b4fc)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+          }}
+        >
+          Cell33
+        </h1>
+      </div>
 
-        </a>
-      </section>
-      {/* Client Logos */}
-      <ClientLogoGrid
-        title="Trusted by teams and schools"
-        logos={[
-          { src: wmLogo, alt: "Wilderness Malaysia" },
-          { src: "/vercel.svg", alt: "Vercel" },
-          { src: "/next.svg", alt: "Next.js" },
-          { src: "/globe.svg", alt: "Global" },
-          { src: "/window.svg", alt: "Window" },
-        ]}
+      {/* Under Construction Badge */}
+      <div
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "0.5rem",
+          background: "rgba(99,102,241,0.15)",
+          border: "1px solid rgba(99,102,241,0.4)",
+          borderRadius: "999px",
+          padding: "0.4rem 1.2rem",
+          fontSize: "0.8rem",
+          fontWeight: "600",
+          letterSpacing: "0.1em",
+          textTransform: "uppercase",
+          color: "#a5b4fc",
+          marginBottom: "2rem",
+        }}
+      >
+        <span style={{ fontSize: "1rem" }}>🚧</span>
+        Under Construction
+      </div>
+
+      {/* Message */}
+      <p
+        style={{
+          fontSize: "clamp(1rem, 3vw, 1.25rem)",
+          color: "rgba(255,255,255,0.6)",
+          maxWidth: "480px",
+          lineHeight: "1.7",
+          margin: "0 0 3rem",
+        }}
+      >
+        Something exciting is on the way. We&apos;re working hard to bring you an amazing experience. Check back soon!
+      </p>
+
+      {/* Divider */}
+      <div
+        style={{
+          width: "60px",
+          height: "2px",
+          background: "linear-gradient(90deg, transparent, #6366f1, transparent)",
+          marginBottom: "2rem",
+        }}
       />
 
-
-      {/* Programs Overview */}
-      <section className="bg-gray-50 w-full py-20 px-6">
-        <div className="max-w-6xl mx-auto text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Programs</h2>
-          <p className="text-gray-600">Designed for corporate teams, schools, and individuals seeking personal growth.</p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <ProgramCard
-            title="Corporate Team Building"
-            description="Dynamic team challenges and outdoor problem-solving for business teams."
-            image={imgCorporate}
-            link="/programs/corporate-team-building"
-          />
-          <ProgramCard
-            title="Schools & Youth Expeditions"
-            description="Experiential learning for youth that develops resilience and leadership."
-            image={imgSchools}
-            link="/programs/schools-youth"
-          />
-          <ProgramCard
-            title="Leadership & Skills Training"
-            description="Build critical leadership, communication, and survival skills outdoors."
-            image={imgLeadership}
-            link="/programs/leadership-skills"
-          />
-        </div>
-
-        <div className="text-center mt-10">
-          <a href="/programs" className="inline-block px-6 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition">
-            View All Programs
-          </a>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="max-w-6xl mx-auto py-20 px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8">What Our Clients Say</h2>
-        <TestimonialCarousel />
-      </section>
-
-      {/* Call to Action */}
-      <CTASection
-        title="Ready to plan your next adventure?"
-        subtitle="Talk to our team today and discover how we can design a custom program for your group."
-        buttonText="Contact Us"
-        buttonLink="/contact"
-      />
+      {/* Footer note */}
+      <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.25)", margin: 0 }}>
+        &copy; {new Date().getFullYear()} Cell33. All rights reserved.
+      </p>
     </main>
   );
 }
+
